@@ -4,8 +4,13 @@
   "description": "Minimalistic framework for server-rendered React applications",
   "main": "./dist/server/next.js",
   "license": "MIT",
-  "repository": "zeit/next.js",
-  "bugs": "https://github.com/zeit/next.js/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeit/next.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zeit/next.js/issues"
+  },
   "homepage": "https://github.com/zeit/next.js",
   "files": [
     "dist",
@@ -18,7 +23,10 @@
     "dynamic.js",
     "prefetch.js",
     "router.js",
-    "error.js"
+    "error.js",
+    "dev": "next", 
+    "build": "next build", 
+    "start": "next start" 
   ],
   "bin": {
     "next": "./dist/bin/next"
@@ -144,5 +152,11 @@
     "roots": [
       "test/"
     ]
-  }
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": ""
 }
